@@ -1,0 +1,49 @@
+POST http://localhost:5000/api/posts/create
+Content-Type: application/json
+
+{
+    "title": "Kevin",
+    "content": "Learn Laravel tại F9",
+    "image": "../../../acset/img/content.jpg"
+}
+
+###
+
+GET http://localhost:5000/api/posts
+
+### 
+
+GET http://localhost:5000/api/posts/60a368757317472a08b66350
+
+###
+
+PUT http://localhost:5000/api/posts/update/60a8f965e7b9361be8b5442f
+Content-Type: application/json
+
+{
+    "title": "Fighting",
+    "content": "Hello lean tại F9",
+    "image": "img4.jpg"
+}
+###
+
+PATCH http://localhost:5000/api/posts/like/60a880c18194ba2a205fb18d
+Content-Type: application/json
+
+###
+
+DELETE http://localhost:5000/api/posts/delete/60a612bf4e52493604e5cc74
+Content-Type: application/json
+
+###
+
+PATCH http://localhost:5000/api/posts/comment/60a8f965e7b9361be8b5442f
+Content-Type: application/json
+
+{
+    "comment": "Ảnh này đẹp"
+}
+
+###
+PATCH http://localhost:5000/api/posts/comment/delete/60a8f922e7b9361be8b5442e/60ab6d61b20a661cacc03e8c
+Content-Type: application/json

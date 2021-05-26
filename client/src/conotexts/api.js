@@ -1,0 +1,1 @@
+export const api = 'https://hungpv-k3-social-app.herokuapp.com/api/posts'
